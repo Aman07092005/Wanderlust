@@ -1,0 +1,26 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-4">
+    <h1 class="col-6 offset-3" style="font-size: 2rem;"><a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a> Find your account</h1>
+    <br><br>
+    <div class="col-6 offset-3">
+        <form action="/forgot" method="POST" class="needs-validation" novalidate>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                    name="email"
+                    id="email"
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your email address"
+                    required
+                >
+            </div>
+            <div class="mb-3">You may receive notifications from us for security and login purposes.</div>
+            <br>
+            <div class="d-grid gap-2 offset-3 col-4">
+                <button class="btn btn-primary">continue</button>
+            </div>
+        </form>
+    </div>
+</div>
